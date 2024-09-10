@@ -1,3 +1,16 @@
+/* CUSTOM PROPS */
+:root {
+  --green: #5fb4a2;
+  --dark-blue: #203a4c;
+  --grey-blue: #33323d;
+  --light-grey: #fafafa;
+  --grey: #eaeaeb;
+  --red: #f43030;
+  --accent-font-family: "Ibarra Real Nova", "Times New Roman", serif;
+  --body-font-family: "Public Sans", "Arial", sans-serif;
+}
+
+
 /* GLOBAL */
 
 html {
@@ -17,13 +30,12 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-
+  font-family: var(--body-font-family);
   font-size: 16px;
   line-height: 1.5;
   height: 100%;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--light-grey);
+  color: var(--grey-blue);
 }
 
 img {
@@ -34,9 +46,118 @@ img {
 .container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+}
 
+.main-content {
+  flex-grow: 1;
+}
+
+.site__header {
+  padding-top: 54px;
+  padding-bottom: 54px;
+}
+.site__header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-link {
+  margin-right: auto;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
+.logo-link:active {
+  opacity: 0.6;
+}
+
+.logo-img {
+  display: block;
+  width: 60px;
+  height: 32px;
+}
+
+
+.sitenav {
+}
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.sitenav__link:active {
+  color: var(--green);
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 42px;
+}
+.sitenav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--grey-blue);
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.sitenav__link:hover {
+  color: rgba(95, 180, 162, 0.8);
+}
+
+.sitenav__link:active {
+  color: rgba(95, 180, 162, 0.8);
+}
+
+.sitenav__item--active .sitenav__link {
+  color: var(--green);
+}
+
+
+.hero__container {
+  position: relative;
+}
+
+.hero__img {
+  width: 1140px;
+  height: 600px;
+  /* object-fit: cover; */
+}
+.hero__info {
+  position: absolute;
+  bottom: 0;
+  padding-top: 56px;
+  padding-right: 56px;
+  width: 445px;
+  background-color: #fff;
+}
+.hero__text {
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: var(--accent-font-family);
+  font-weight: bold;
+  letter-spacing: -0.45px;
+  margin-bottom: 53px;
+  margin-right: -21px;
+}
+.button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--green);
 }
