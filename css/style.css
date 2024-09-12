@@ -245,6 +245,48 @@ img {
 }
 
 
+.site__footer {
+  background-color: var(--grey-blue);
+}
+.site__footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.logo-nav-footer {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img-footer {
+  margin-right: 48px;
+}
+
+.sitenav__link-footer {
+  color: #fff;
+}
+.social__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social__item:not(:last-child) {
+  margin-right: 15px;
+}
+.social__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social__link:hover {
+  color: var(--green);
+}
+
+
 
 @media only screen and (max-width: 768px) {
   .hero__img {
