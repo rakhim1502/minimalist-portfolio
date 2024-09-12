@@ -170,6 +170,7 @@ img {
 
 
 .about-me {
+  margin-bottom: 150px;
 }
 
 .img-text-info {
@@ -180,10 +181,7 @@ img {
   height: 600px;
   margin-right: 125px;
 }
-.about-me__info {
-  /* display: flex; */
-  /* flex-direction: column; */
-}
+
 .img-text-info__title {
   margin: 0;
   padding: 0;
@@ -220,6 +218,31 @@ img {
 }
 
 
+.cta {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.cta-heading {
+  width: 100%;
+  max-width: 350px;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  font-family: var(--accent-font-family);
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+.divider {
+  width: 100%;
+  max-width: 534px;
+  height: 1px;
+  color: var(--grey-blue);
+}
 
 
 
