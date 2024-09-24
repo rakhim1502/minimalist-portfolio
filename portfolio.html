@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minimalist portfolio</title>
+  <title>Minimalist portfolio | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,8 +19,8 @@
       </a>
       <nav class="site__header-sitenav sitenav sitenav--site-header">
         <ul class="sitenav__list">
-          <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="#">HOME</a></li>
-          <li class="sitenav__item"><a class="sitenav__link" href="portfolio.html">PORTFOLIO</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">HOME</a></li>
+          <li class="sitenav__item sitenav__item--active"><a class="sitenav__link" href="#">PORTFOLIO</a></li>
           <li class="sitenav__item"><a class="sitenav__link" href="#">CONTACT ME</a></li>
         </ul>
       </nav>
@@ -28,35 +28,49 @@
   </header>
 
   <main class="main-content">
-    <section class="hero">
-      <div class="hero__container container">
-        <img class="hero__img" src="img/Bitmap.jpg" alt="bitmap" srcset="img/Bitmap.jpg 1x, img/Bitmap@2x.jpg 2x" width="1140" height="600">
-        <div class="hero__info">
-          <h3 class="hero__text">Hey, I’m Alex Spencer and I love building beautiful websites</h3>
-          <button class="button" type="button"><img src="img/button.svg" alt="button"></button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT ME -->
-    <section class="about-me">
-      <div class="container">
-        <div class="img-text-info">
-          <img class="about-me__img" src="img/person-man.jpg" alt="person-man.jpg" width="540" height="600" srcset="img/person-man.jpg 1x, img/person-man.jpg@2x.jpg 2x">
-          <div class="about-me__info">
-            <h2 class="img-text-info__title">About Me</h2>
-            <p class="img-text-info__text">I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
-            <a class="button-link" href="#">Go to portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="container">
+      <ul class="projects">
+        <li class="project__item">
+            <img class="project__img" src="img/manage-preview-desktop.jpg" alt="project img" width="540" height="500" srcset="img/manage-preview-desktop.jpg 1x, img/manage-preview-desktop@2x.jpg 2x">
+            <div class="project-description">
+              <h2 class="project__info-title">Manage</h2>
+              <p class="project__info-text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+              <a class="button-link" href="#">VIEW PROJECT</a>
+            </div>
+        </li>
+        <li class="project__item">
+            <img class="project__img" src="img/bookmark-preview-desktop.jpg" alt="project img" width="540" height="500" srcset="img/bookmark-preview-desktop.jpg 1x, img/bookmark-preview-desktop@2x.jpg 2x">
+            <div class="project-description">
+              <h2 class="project__info-title">Bookmark</h2>
+              <p class="project__info-text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.</p>
+              <a class="button-link" href="#">VIEW PROJECT</a>
+            </div>
+        </li>
+        <li class="project__item">
+            <img class="project__img" src="img/insure-preview-desktop.jpg" alt="project img" width="540" height="500" srcset="img/insure-preview-desktop.jpg 1x, img/insure-preview-desktop@2x.jpg 2x">
+            <div class="project-description">
+              <h2 class="project__info-title">Insure</h2>
+              <p class="project__info-text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+              <a class="button-link" href="#">VIEW PROJECT</a>
+            </div>
+        </li>
+        <li class="project__item">
+            <img class="project__img" src="img/fylo-preview-desktop.jpg" alt="project img" width="540" height="500" srcset="img/fylo-preview-desktop.jpg 1x, img/fylo-preview-desktop@2x.jpg 2x">
+            <div class="project-description">
+              <h2 class="project__info-title">Fylo</h2>
+              <p class="project__info-text">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+              <a class="button-link" href="#">VIEW PROJECT</a>
+            </div>
+        </li>
+      </ul>
       <section class="cta container">
         <h2 class="cta-heading">Interested in doing a project together?</h2>
         <hr class="divider">
         <a class="button-link" href="#">CONTACT ME</a>
       </section>
+    </div>
   </main>
+
 
   <footer class="site__footer">
     <div class="site__footer-container container">
