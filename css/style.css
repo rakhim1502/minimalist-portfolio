@@ -318,11 +318,14 @@ img {
   width: 540px;
   height: 500px;
   margin-right: 125px;
+  width: auto;
+  height: auto;
 }
 .project-description {
   padding: 0;
   margin: 0;
   max-width: 350px;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
 }
 .project__info-title {
   padding: 0;
@@ -332,6 +335,7 @@ img {
   letter-spacing: -0.36px;
   color: var(--grey-blue);
   margin-bottom: 28px;
+  margin-top: 30px;
   font-style: var(--accent-font-family);
 }
 .project__info-text {
@@ -339,8 +343,6 @@ img {
   margin: 0;
   line-height: 30px;
   margin-bottom: 24px;
-}
-.button-link {
 }
 
 
@@ -360,6 +362,16 @@ img {
   }
   .about-me__img {
     width: 281px;
+    margin-right: 70px;
+  }
+  .project__item:nth-child(even) .project__img {
+    margin-left: 70px;
+  }
+
+
+  .project__img {
+    width: 340px;
+    height: 315px;
     margin-right: 70px;
   }
 }
@@ -451,4 +463,26 @@ img {
   .site__footer-sitenav .sitenav__item {
     margin-bottom: 40px;
   }
+  .projects {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .project__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .project__item:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__item:nth-child(even) .project__img {
+    margin: 0;
+  }
+  .project__img {
+    width: 311px;
+    height: 288px;
+  }
+
 }
